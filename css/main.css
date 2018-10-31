@@ -1,7 +1,12 @@
 html {
+  box-sizing: border-box;
   background-color: #f0eee8;
   font-family: Georgia, serif;
   line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 h2 {
@@ -30,19 +35,25 @@ p {
   display: inline-block;
   color: #512200;
   text-align: left;
-  padding: 0 1rem;
+  padding: 1rem;
   margin: 0;
-  font-size: .875rem;
+  font-size: 1rem;
 }
 
 dt {
   display: inline-block;
-  text-align: left;
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 dd {
   display: inline-block;
-  text-align: right;
+  float: left;
+  width: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 .btn {
@@ -64,12 +75,16 @@ dd {
 
 dl {
   display: block;
+  width: 100%;
+  overflow: hidden;
+  background: #dcd4cd;
+  font-size: .875rem;
   padding: 1rem;
-  margin: 1rem;
+  margin: 0;
   border-top: 2px solid #9a816d;
   border-bottom: 2px solid #9a816d;
 }
 
 div {
-   text-align: center;
+  text-align: center;
 }
